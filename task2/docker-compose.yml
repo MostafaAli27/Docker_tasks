@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  mysql-development:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: db_pass123
+      MYSQL_DATABASE: mysql-db
+    ports:
+      - "3308:3306"
